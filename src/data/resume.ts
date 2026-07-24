@@ -119,7 +119,13 @@ export const projects: Project[] = [
     id: "ml-dl-projects",
     title: "Machine Learning & Deep Learning Projects",
     stack: "Python, TensorFlow, Keras, scikit-learn",
-    image: "/projects/ml-dl-projects.svg",
+    image: "/projects/ml-confusion-matrix.png",
+    imageFit: "contain",
+    gallery: [
+      { src: "/projects/ml-gru-accuracy-loss.png", label: "GRU accuracy/loss" },
+      { src: "/projects/ml-cnn-accuracy.png", label: "CNN accuracy" },
+      { src: "/projects/ml-cnn-top-k-accuracy.png", label: "CNN top-k accuracy" },
+    ],
     bullets: [
       "Implemented and compared classical ML models (decision trees, Naive Bayes, k-NN, random forests) on multiple UCI datasets.",
       "Built and trained neural networks for sentiment analysis on the IMDB dataset (50k labeled reviews).",
