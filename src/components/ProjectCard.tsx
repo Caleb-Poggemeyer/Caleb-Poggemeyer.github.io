@@ -3,13 +3,15 @@ import type { Project } from "../data/resume";
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="project-card">
-      <div className="project-card__image">
-        <img
-          src={project.image}
-          alt={`${project.title} screenshot`}
-          style={project.imageFit ? { objectFit: project.imageFit } : undefined}
-        />
-      </div>
+      {project.image && (
+        <div className="project-card__image">
+          <img
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            style={project.imageFit ? { objectFit: project.imageFit } : undefined}
+          />
+        </div>
+      )}
 
       <div className="project-card__body">
         <div className="project-card__heading">
@@ -37,7 +39,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="project-card__gallery-thumb"
                 title={g.label}
               >
-                <img src={g.src} alt={`${project.title} — ${g.label}`} />
+                <img src={g.src} alt={`${project.title}: ${g.label}`} />
               </a>
             ))}
           </div>

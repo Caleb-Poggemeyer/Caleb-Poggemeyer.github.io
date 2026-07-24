@@ -1,8 +1,8 @@
 export const profile = {
   name: "Caleb Poggemeyer",
-  title: "Computer Engineering Student — AI Emphasis",
+  title: "Computer Engineer, AI Emphasis",
   tagline:
-    "Building full-stack AI tools and embedded systems. Graduating May 2026 from the University of Nebraska–Lincoln.",
+    "Building full-stack AI tools and embedded systems. B.S. in Computer Engineering from the University of Nebraska–Lincoln, May 2026.",
   location: "Lincoln, NE",
   email: "cpoggemeyer2004@gmail.com",
   phone: "402-874-1553",
@@ -14,7 +14,7 @@ export const profile = {
 export const education = {
   school: "University of Nebraska–Lincoln",
   degree: "B.S. in Computer Engineering (AI Emphasis)",
-  date: "Expected May 2026",
+  date: "May 2026",
   gpa: "3.52",
   honors: ["Nebraska Regents Scholarship Recipient", "Dean's List"],
 };
@@ -70,7 +70,7 @@ export type Project = {
   role?: string;
   status?: string;
   stack: string;
-  image: string;
+  image?: string;
   imageFit?: "cover" | "contain";
   gallery?: { src: string; label: string }[];
   bullets: string[];
@@ -103,40 +103,29 @@ export const projects: Project[] = [
       "Built a dual-track LLM evaluation pipeline combining human ratings with an automated Gemini \"LLM-as-Judge\" scorer using a shared seven-dimension rubric and exponential backoff for reliable API pacing.",
       "Designed a 108-prompt benchmark with professional and learner evaluators to measure quality and inter-rater agreement, backed by 89 xUnit tests and a CSV ingestion pipeline for evaluation data.",
     ],
-    links: [
-      { label: "Watch Demo", url: "/projects/prompt-forge-demo.mp4" },
-      { label: "GitHub", url: "#" },
-    ],
-  },
-  {
-    id: "price-comparison",
-    title: "Price Comparison Application",
-    stack: "C#, REST APIs",
-    image: "/projects/price-comparison.jpg",
-    imageFit: "contain",
-    gallery: [
-      { src: "/projects/price-comparison-dashboard.jpg", label: "Dashboard" },
-      { src: "/projects/price-comparison-compare.jpg", label: "Compare" },
-      { src: "/projects/price-comparison-settings.jpg", label: "Settings" },
-    ],
-    bullets: [
-      "Built a backend application that queries the Amazon API and parses NET32 JSON data to compare product pricing across vendors.",
-      "Implemented data parsing and normalization pipelines to standardize pricing from multiple sources.",
-      "Designed the application with a modular backend architecture to support future frontend integration.",
-    ],
-    links: [{ label: "GitHub", url: "#" }],
+    links: [{ label: "Watch Demo", url: "/projects/prompt-forge-demo.mp4" }],
   },
   {
     id: "fullstack-webapp",
     title: "Full-Stack Web Application",
     stack: "React, C#, SQL",
-    image: "/projects/fullstack-webapp.svg",
     bullets: [
       "Built a web application with search functionality using React, C#/.NET, and SQL.",
       "Collaborated in an Agile team to implement features, integrate backend APIs, and debug frontend/backend interactions.",
       "Implemented CI workflows with GitHub Actions to automate testing and ensure code quality.",
     ],
-    links: [{ label: "GitHub", url: "#" }],
+  },
+  {
+    id: "ml-dl-projects",
+    title: "Machine Learning & Deep Learning Projects",
+    stack: "Python, TensorFlow, Keras, scikit-learn",
+    image: "/projects/ml-dl-projects.svg",
+    bullets: [
+      "Implemented and compared classical ML models (decision trees, Naive Bayes, k-NN, random forests) on multiple UCI datasets.",
+      "Built and trained neural networks for sentiment analysis on the IMDB dataset (50k labeled reviews).",
+      "Trained convolutional neural networks on CIFAR-100 and Fashion-MNIST using TensorFlow and Keras.",
+      "Evaluated models using accuracy, training/validation behavior, and basic hyperparameter tuning.",
+    ],
   },
 ];
 

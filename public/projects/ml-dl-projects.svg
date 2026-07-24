@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+  <rect width="480" height="300" fill="#f8fafc"/>
+  <rect x="1" y="1" width="478" height="298" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="8 6"/>
+  <g transform="translate(240,132)">
+    <rect x="-63" y="-63" width="42" height="42" fill="#64748b"/>
+    <rect x="-21" y="-63" width="42" height="42" fill="#cbd5e1"/>
+    <rect x="21" y="-63" width="42" height="42" fill="#e2e8f0"/>
+    <rect x="-63" y="-21" width="42" height="42" fill="#cbd5e1"/>
+    <rect x="-21" y="-21" width="42" height="42" fill="#64748b"/>
+    <rect x="21" y="-21" width="42" height="42" fill="#cbd5e1"/>
+    <rect x="-63" y="21" width="42" height="42" fill="#e2e8f0"/>
+    <rect x="-21" y="21" width="42" height="42" fill="#cbd5e1"/>
+    <rect x="21" y="21" width="42" height="42" fill="#64748b"/>
+    <rect x="-63" y="-63" width="126" height="126" fill="none" stroke="#94a3b8" stroke-width="3"/>
+  </g>
+  <text x="240" y="230" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#94a3b8">Project image coming soon</text>
+</svg>

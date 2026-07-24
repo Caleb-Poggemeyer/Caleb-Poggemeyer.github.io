@@ -9,13 +9,12 @@ export default function About() {
 
         <div className="about__grid">
           <p className="about__text">
-            I'm a Computer Engineering student at the University of Nebraska–Lincoln
-            graduating in {education.date.replace("Expected ", "")}, focused on AI
-            engineering, full-stack development, and embedded systems. I like building
-            things end-to-end — from an embedded control loop to a full-stack web app
-            with a proper evaluation pipeline behind it. Currently leading an
-            industry-sponsored senior design project and building an AI-assisted
-            prompt engineering platform on the side.
+            I'm a Computer Engineering graduate from the University of Nebraska–Lincoln
+            ({education.date}), focused on AI engineering, full-stack development, and
+            embedded systems. I like building things end-to-end, from an embedded
+            control loop to a full-stack web app with a proper evaluation pipeline
+            behind it. I recently led an industry-sponsored senior design project and
+            I'm building an AI-assisted prompt engineering platform on the side.
           </p>
 
           <div className="about__card">

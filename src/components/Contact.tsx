@@ -7,8 +7,8 @@ export default function Contact() {
         <p className="eyebrow">Contact</p>
         <h2 className="section__title">Let's talk</h2>
         <p className="contact__lead">
-          I'm actively looking for full-time and internship opportunities. Feel free to
-          reach out — I'll get back to you quickly.
+          I'm actively looking for full-time opportunities. Feel free to reach out and
+          I'll get back to you quickly.
         </p>
 
         <div className="contact__grid">
