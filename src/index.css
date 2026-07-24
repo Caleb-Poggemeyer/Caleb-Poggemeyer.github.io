@@ -471,6 +471,35 @@ ul {
   color: var(--text-soft);
 }
 
+.project-card__gallery {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.project-card__gallery-thumb {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  display: block;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.project-card__gallery-thumb:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.project-card__gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .project-card__links {
   margin-top: 10px;
   display: flex;

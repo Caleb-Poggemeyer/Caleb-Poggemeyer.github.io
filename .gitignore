@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# raw asset staging area (processed copies live in public/)
+/images/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

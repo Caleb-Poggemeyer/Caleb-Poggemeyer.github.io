@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
 
         <div className="hero__portrait">
-          <img src="/profile.svg" alt="Portrait of Caleb Poggemeyer (placeholder)" />
+          <img src="/profile.jpg" alt="Portrait of Caleb Poggemeyer" />
         </div>
       </div>
     </section>

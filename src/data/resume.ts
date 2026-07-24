@@ -6,8 +6,8 @@ export const profile = {
   location: "Lincoln, NE",
   email: "cpoggemeyer2004@gmail.com",
   phone: "402-874-1553",
-  linkedin: "https://linkedin.com/in/PLACEHOLDER",
-  github: "https://github.com/PLACEHOLDER",
+  linkedin: "https://www.linkedin.com/in/caleb-poggemeyer-78b6512ab/",
+  github: "https://github.com/Caleb-Poggemeyer",
   resumeUrl: "/resume.pdf",
 };
 
@@ -71,6 +71,8 @@ export type Project = {
   status?: string;
   stack: string;
   image: string;
+  imageFit?: "cover" | "contain";
+  gallery?: { src: string; label: string }[];
   bullets: string[];
   links?: { label: string; url: string }[];
 };
@@ -81,29 +83,48 @@ export const projects: Project[] = [
     title: "Senior Design Project",
     role: "Squad Lead",
     stack: "Embedded Systems, Arduino",
-    image: "/projects/senior-design.svg",
+    image: "/projects/senior-design.jpg",
     bullets: [
       "Leading a six-person team developing an industry-sponsored automated air impact wrench with integrated paint-marking for CLAAS.",
       "Designing the embedded control system integrating vibration sensing, RPM detection, relay control, and automated paint application.",
       "Coordinating hardware/software integration, prototype testing, and weekly technical reviews with the sponsor.",
     ],
-    links: [{ label: "Case Study", url: "#" }],
+    links: [{ label: "Watch Demo", url: "/projects/senior-design-demo.mp4" }],
   },
   {
     id: "prompt-forge",
     title: "Prompt Forge",
     status: "In Progress",
     stack: "React, .NET 8, EF Core",
-    image: "/projects/prompt-forge.svg",
+    image: "/projects/prompt-forge.jpg",
+    imageFit: "contain",
     bullets: [
       "Developing a full-stack AI platform using React 19 (Axios), .NET 8 Web API, EF Core, and SQLite that guides users through a structured interview to generate optimized prompts for Claude, Gemini, and Llama 3.",
       "Built a dual-track LLM evaluation pipeline combining human ratings with an automated Gemini \"LLM-as-Judge\" scorer using a shared seven-dimension rubric and exponential backoff for reliable API pacing.",
       "Designed a 108-prompt benchmark with professional and learner evaluators to measure quality and inter-rater agreement, backed by 89 xUnit tests and a CSV ingestion pipeline for evaluation data.",
     ],
     links: [
+      { label: "Watch Demo", url: "/projects/prompt-forge-demo.mp4" },
       { label: "GitHub", url: "#" },
-      { label: "Live Demo", url: "#" },
     ],
+  },
+  {
+    id: "price-comparison",
+    title: "Price Comparison Application",
+    stack: "C#, REST APIs",
+    image: "/projects/price-comparison.jpg",
+    imageFit: "contain",
+    gallery: [
+      { src: "/projects/price-comparison-dashboard.jpg", label: "Dashboard" },
+      { src: "/projects/price-comparison-compare.jpg", label: "Compare" },
+      { src: "/projects/price-comparison-settings.jpg", label: "Settings" },
+    ],
+    bullets: [
+      "Built a backend application that queries the Amazon API and parses NET32 JSON data to compare product pricing across vendors.",
+      "Implemented data parsing and normalization pipelines to standardize pricing from multiple sources.",
+      "Designed the application with a modular backend architecture to support future frontend integration.",
+    ],
+    links: [{ label: "GitHub", url: "#" }],
   },
   {
     id: "fullstack-webapp",
@@ -114,18 +135,6 @@ export const projects: Project[] = [
       "Built a web application with search functionality using React, C#/.NET, and SQL.",
       "Collaborated in an Agile team to implement features, integrate backend APIs, and debug frontend/backend interactions.",
       "Implemented CI workflows with GitHub Actions to automate testing and ensure code quality.",
-    ],
-    links: [{ label: "GitHub", url: "#" }],
-  },
-  {
-    id: "price-comparison",
-    title: "Price Comparison Application",
-    stack: "C#, REST APIs",
-    image: "/projects/price-comparison.svg",
-    bullets: [
-      "Built a backend application that queries the Amazon API and parses NET32 JSON data to compare product pricing across vendors.",
-      "Implemented data parsing and normalization pipelines to standardize pricing from multiple sources.",
-      "Designed the application with a modular backend architecture to support future frontend integration.",
     ],
     links: [{ label: "GitHub", url: "#" }],
   },
