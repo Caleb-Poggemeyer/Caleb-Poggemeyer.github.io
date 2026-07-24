@@ -106,6 +106,22 @@ export const projects: Project[] = [
     links: [{ label: "Watch Demo", url: "/projects/prompt-forge-demo.mp4" }],
   },
   {
+    id: "price-comparison",
+    title: "Price Comparison Application",
+    stack: "C#, REST APIs",
+    image: "/projects/price-comparison.jpg",
+    gallery: [
+      { src: "/projects/price-comparison-dashboard.jpg", label: "Dashboard" },
+      { src: "/projects/price-comparison-compare.jpg", label: "Compare" },
+      { src: "/projects/price-comparison-settings.jpg", label: "Settings" },
+    ],
+    bullets: [
+      "Built a backend application that queries the Amazon API and parses NET32 JSON data to compare product pricing across vendors.",
+      "Implemented data parsing and normalization pipelines to standardize pricing from multiple sources.",
+      "Designed the application with a modular backend architecture to support future frontend integration.",
+    ],
+  },
+  {
     id: "fullstack-webapp",
     title: "Full-Stack Web Application",
     stack: "React, C#, SQL",
