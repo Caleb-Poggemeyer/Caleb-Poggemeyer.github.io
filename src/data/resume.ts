@@ -2,7 +2,7 @@ export const profile = {
   name: "Caleb Poggemeyer",
   title: "Computer Engineer, AI Emphasis",
   tagline:
-    "Building full-stack AI tools and embedded systems. B.S. in Computer Engineering from the University of Nebraska–Lincoln, May 2026.",
+    "Building full-stack AI tools and embedded systems as a Computer Engineering graduate of the University of Nebraska–Lincoln (May 2026).",
   location: "Lincoln, NE",
   email: "cpoggemeyer2004@gmail.com",
   phone: "402-874-1553",
